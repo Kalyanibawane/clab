@@ -1,0 +1,306 @@
+.contact {
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    /* Light gray-blue background */
+    border-radius: 12px;
+    /* More pronounced rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    /* Stronger shadow for depth */
+    text-align: center;
+    /* Center text */
+    margin: 20px auto;
+    /* Center the section */
+    max-width: 800px;
+    /* Limit maximum width */
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    /* Modern font */
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #555;
+    /* Softer gray for text */
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    display: flex;
+    /* Flexbox for layout */
+    flex-wrap: wrap;
+    /* Wrap items on smaller screens */
+    justify-content: space-between;
+    /* Space between items */
+    margin-bottom: 30px;
+    /* Space below contact info */
+}
+
+.contact-details {
+    /* Take equal space */
+    background-color: #ffffff;
+    /* White background */
+    border: 1px solid #e0e0e0;
+    /* Light border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the box */
+    margin-right: 20px;
+    /* Space between contact details and form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Light shadow */
+    transition: transform 0.3s;
+    /* Animation effect */
+}
+
+.contact-details:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+.contact-details p {
+    margin: 15px 0;
+    /* Space between paragraphs */
+    color: #444;
+    /* Darker color for text */
+}
+
+.contact-details a {
+    color: #007bff;
+    /* Bootstrap primary color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold link */
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+form {
+    flex: 2;
+    /* Form takes more space */
+    background-color: #ffffff;
+    /* White background for form */
+    border: 1px solid #e0e0e0;
+    /* Light border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding for form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Light shadow */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Space between form elements */
+}
+
+label {
+    display: block;
+    /* Make labels block elements */
+    margin-bottom: 5px;
+    /* Space between label and input */
+    font-weight: bold;
+    /* Bold labels */
+    color: #333;
+    /* Darker color for labels */
+}
+
+input,
+textarea {
+    width: 90%;
+    /* Full width inputs */
+    padding: 12px;
+    /* Padding inside inputs */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 8px;
+    /* Rounded corners */
+    font-size: 1em;
+    /* Font size */
+    transition: border-color 0.3s;
+    /* Smooth transition */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    /* Highlight border color on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+button {
+    background-color: #007bff;
+    /* Button color */
+    color: white;
+    /* Text color */
+    padding: 12px 25px;
+    /* Button padding */
+    border: none;
+    /* Remove border */
+    border-radius: 8px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+    font-size: 1em;
+    /* Button font size */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker button color on hover */
+}
+
+.confirmation {
+    margin-top: 20px;
+    /* Space above confirmation message */
+    font-size: 1.1em;
+    /* Font size for confirmation */
+    color: #28a745;
+    /* Green color for success message */
+    background-color: #eafaf1;
+    /* Light green background */
+    padding: 15px;
+    /* Padding for confirmation message */
+    border-radius: 8px;
+    /* Rounded corners */
+    border: 1px solid #28a745;
+    /* Border matching the text color */
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 500px;
+    line-height: 30px;
+}
+
+a:hover {
+    color: rgb(180, 51, 4);
+    text-decoration: #252824 underline;
+}
+
+header {
+    display: flex;
+    /* Use flexbox for header */
+    justify-content: space-between;
+    /* Space between hero and contact info */
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px;
+    /* Padding for the header */
+}
+
+.cta-button {
+    background: #f09a39;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    flex: 1;
+    /* Allow the hero section to take remaining space */
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFm7c688Hf5w9-_VMB0fZ1Ff6F3Jyx1M6yg&s') no-repeat center center/cover;
+    color: rgb(243, 234, 234);
+    padding: 50px 20px;
+    /* Padding for the hero content */
+    text-align: center;
+}
+
+
+nav {
+    text-align: end;
+    background-color: #8b9c91;
+    border-radius: 10px;
+    line-height: 50px;
+    transition: ease-in-out;
+}
+
+.info {
+    width: 450px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 40px auto;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0a0c0a;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    box-shadow: 0px 4px 8px black;
+    transition: 1s;
+}
+
+.info:hover {
+    box-shadow: 5px 10px 25px black;
+    transform: scale(1.03);
+
+}
+
+img {
+
+    border-radius: 25px;
+}
+
+#one {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    border: 2px solid #6674CC;
+    color: #6674CC;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 500px;
+    padding: 20px;
+    margin-left: 46.2%;
+    margin-top: 20px;
+    transition: 0.5s ease-in;
+    box-shadow: 0px 5px 8px black;
+}
+
+#one {
+    background-color: #a9c0ac;
+}
+
+button:hover {
+    color: #fff;
+    border-color: black;
+    /* border-radius: 40px; */
+    background-color: #6674CC;
+    box-shadow: 2px 8px 20px black;
+    cursor: pointer;
+}
+
+button:active {
+    border-radius: 25px;
+    cursor: progress;
+}

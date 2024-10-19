@@ -1,0 +1,72 @@
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#first {
+    font-weight: bold;
+    background-color: #8b9c91;
+    border: 2px solid black;
+}
+
+#forth {
+    font-weight: 900px;
+}
+
+#second {
+    padding: 5px;
+    text-align: center;
+    background-color: #a9c0ac;
+    border: 2px solid black;
+    line-height: 20px;
+    letter-spacing: 1px;
+    background-image: url("Work4.jpg");
+    background-size: cover;
+}
+
+#third {
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    /* Use flexbox for header */
+    justify-content: space-between;
+    /* Space between hero and contact info */
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px;
+    /* Padding for the header */
+}
+
+.cta-button {
+    background: #f09a39;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    flex: 1;
+    /* Allow the hero section to take remaining space */
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFm7c688Hf5w9-_VMB0fZ1Ff6F3Jyx1M6yg&s') no-repeat center center/cover;
+    color: rgb(243, 234, 234);
+    padding: 50px 20px;
+    /* Padding for the hero content */
+    text-align: center;
+}
+
+
+nav {
+    text-align: end;
+    background-color: #8b9c91;
+    border-radius: 10px;
+    line-height: 50px;
+    transition: ease-in-out;
+}
