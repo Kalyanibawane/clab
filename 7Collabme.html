@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="8Collabme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collab with Me</title>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Form submitted successfully!");
+            document.getElementById("collabForm").reset(); // Reset the form
+        }
+    </script>
+</head>
+<header class="header">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Celebrations with Beautiful Mehndi Art</h1>
+            <p>Custom Designs for Weddings, Festivals, and Special Events</p><br>
+            <!-- <a href="https://surveyheart.com/form/666bbbc12686fb19e013de44" class="cta-button">Book Your Appointment</a> -->
+        </div>
+    </div>
+</header>
+<hr>
+<nav class="first">
+    <a href="1About.html">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="3service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="11Portfolio.html">Portfolio</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="5FAQ.html">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="9Contactme.html">Contact Me</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="7Collabme.html">Collab</a> &nbsp;&nbsp;&nbsp;&nbsp;
+</nav>
+
+<body>
+    <div id="first">
+        <hr>
+        <h1><b>CONTACT</b></h1>
+        <hr>
+    </div>
+    <div id="second">
+        <div id="third">
+            <h2>Wanna work together/collab?</h2>
+        </div>
+        <p>
+        <h3>We are just a step away from working together!!</h3>
+        </p>
+        <div id="main">
+            <form id="collabForm" onsubmit="showAlert(event)">
+                <div id="forth">
+                    <label for="name">Name </label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <br>
+                <div id="forth">
+                    <label for="email">Email Address </label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <br>
+                <div id="forth">
+                    <label for="mobile">Contact No.</label><br>
+                    <input type="tel" id="mobile" name="contact_no" placeholder="Enter your contact number">
+                </div>
+                <br>
+                <div id="forth">
+                    <label for="experience">Your Experience</label><br>
+                    <input type="text" id="experience" name="experience" placeholder="Your experience">
+                </div>
+                <br>
+                <div id="forth">
+                    <label for="location">Your Location</label><br>
+                    <input type="text" id="location" name="location" placeholder="Your location">
+                </div>
+                <br>
+                <div id="forth">
+                    <label for="description">Your Description</label><br>
+                    <textarea id="description" name="description" cols="30" rows="5"></textarea>
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

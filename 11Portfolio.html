@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="12Portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<script>
+    function expandImage(img) {
+    const expandedImage = document.getElementById('expanded-image');
+    const largeImage = document.getElementById('large-image');
+    largeImage.src = img.src;  // Set the source of the large image to the clicked image's source
+    expandedImage.style.display = 'flex';  // Show the expanded image
+}
+
+function closeExpandedImage() {
+    const expandedImage = document.getElementById('expanded-image');
+    expandedImage.style.display = 'none';  // Hide the expanded image
+}
+
+function showMore(id) {
+    document.getElementById(id).style.display = 'block';
+}
+
+function hideMore(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+</script>
+
+<header class="header">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Celebrations with Beautiful Mehndi Art</h1>
+            <p>Custom Designs for Weddings, Festivals, and Special Events</p><br>
+            <!-- <a href="https://surveyheart.com/form/666bbbc12686fb19e013de44" class="cta-button">Book Your Appointment</a> -->
+        </div>
+    </div>
+</header>
+<hr>
+<nav class="first">
+    <a href="1About.html">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="3service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="11Portfolio.html">Portfolio</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="5FAQ.html">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="9Contactme.html">Contact Me</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="7Collabme.html">Collab</a> &nbsp;&nbsp;&nbsp;&nbsp;
+</nav>
+
+<section id="portfolio" class="portfolio">
+    <h2>My Mehndi Portfolio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item" onclick="showMore('more1')">
+            <!-- <img src="design1.jpg" alt="Mehndi Design 1"> -->
+            <h3>Elegant Bridal Mehndi</h3>
+            <p>This design features intricate patterns with floral motifs.</p>
+        </div>
+        <div class="portfolio-item" onclick="showMore('more2')">
+            <!-- <img src="design2.jpg" alt="Mehndi Design 2"> -->
+            <h3>Festive Pattern</h3>
+            <p>A vibrant design with bold lines for celebrations.</p>
+        </div>
+        <div class="portfolio-item" onclick="showMore('more3')">
+            <!-- <img src="design3.jpg" alt="Mehndi Design 3"> -->
+            <h3>Traditional Indian Design</h3>
+            <p>Classic patterns showcasing cultural heritage.</p>
+        </div>
+        <!-- More items can be added here -->
+    </div>
+
+    <div class="more-images" id="more1" style="display: none;">
+        <h3>More Elegant Bridal Mehndi Designs</h3>
+        <img src="design1a.jpg" alt="More Design 1" onclick="expandImage(this)">
+        <img src="design1b.jpg" alt="More Design 2" onclick="expandImage(this)">
+        <img src="design1c.jpg" alt="More Design 3" onclick="expandImage(this)">
+        <img src="design1d.jpg" alt="More Design 4" onclick="expandImage(this)">
+        <img src="design1e.jpg" alt="More Design 5" onclick="expandImage(this)">
+        <img src="design1f.jpg" alt="More Design 6" onclick="expandImage(this)">
+        <img src="design1g.jpg" alt="More Design 7" onclick="expandImage(this)">
+        <img src="design1h.jpg" alt="More Design 8" onclick="expandImage(this)">
+        <button onclick="hideMore('more1')">See Less</button>
+    </div>
+    <div class="more-images" id="more2" style="display: none;">
+        <h3>More Festive Pattern Designs</h3>
+        <img src="design2i.jpg" alt="More Design 9" onclick="expandImage(this)">
+        <img src="design2j.jpg" alt="More Design 10" onclick="expandImage(this)">
+        <img src="design1k.jpg" alt="More Design 11" onclick="expandImage(this)">
+        <img src="design1l.jpg" alt="More Design 12" onclick="expandImage(this)">
+        <img src="design1m.jpg" alt="More Design 13" onclick="expandImage(this)">
+        <img src="design1n.jpg" alt="More Design 14" onclick="expandImage(this)">
+        <img src="design1n.jpg" alt="More Design 34" onclick="expandImage(this)">
+        <img src="design1o.jpg" alt="More Design 15" onclick="expandImage(this)">
+        <button onclick="hideMore('more2')">See Less</button>
+    </div>
+    <div class="more-images" id="more3" style="display: none;">
+        <h3>More Traditional Designs</h3>
+        <img src="design1p.jpg" alt="More Design 16" onclick="expandImage(this)">
+        <img src="design1q.jpg" alt="More Design 17" onclick="expandImage(this)">
+        <img src="design1r.jpg" alt="More Design 18" onclick="expandImage(this)">
+        <img src="design1s.jpg" alt="More Design 19" onclick="expandImage(this)">
+        <img src="design1t.jpg" alt="More Design 21" onclick="expandImage(this)">
+        <img src="design1n.jpg" alt="More Design 22" onclick="expandImage(this)">
+        <img src="design1a.jpg" alt="More Design 23" onclick="expandImage(this)">
+        <img src="design1o.jpg" alt="More Design 24" onclick="expandImage(this)">
+        <button onclick="hideMore('more3')">See Less</button>
+    </div>
+    <div id="expanded-image" class="expanded-image" style="display: none;" onclick="closeExpandedImage()">
+        <span class="close">&times;</span> 
+        <img id="large-image" src="" alt="Expanded View">
+    </div>
+</section>

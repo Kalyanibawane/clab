@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="6FAQ.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+</head>
+<script>
+    function toggleAnswer(id) {
+        const answer = document.getElementById(id);
+        if (answer.style.display === "none") {
+            answer.style.display = "block"; // Show the answer
+        } else {
+            answer.style.display = "none"; // Hide the answer
+        }
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>
+<header class="header">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Celebrations with Beautiful Mehndi Art</h1>
+            <p>Custom Designs for Weddings, Festivals, and Special Events</p><br>
+            <!-- <a href="https://surveyheart.com/form/666bbbc12686fb19e013de44" class="cta-button">Book Your Appointment</a> -->
+        </div>
+    </div>
+</header>
+<hr>
+<nav class="first">
+    <a href="1About.html">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="3service.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="11Portfolio.html">Portfolio</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="5FAQ.html">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="9Contactme.html">Contact Me</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="7Collabme.html">Collab</a> &nbsp;&nbsp;&nbsp;&nbsp;
+</nav>
+
+<section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer('faq1')">What is mehndi?</h3>
+        <p class="faq-answer" id="faq1" style="display: none;">Mehndi is a form of body art that involves applying henna
+            paste to the skin, creating beautiful designs that are temporary and last for several days.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer('faq2')">How long does mehndi last?</h3>
+        <p class="faq-answer" id="faq2" style="display: none;">Typically, mehndi can last from 5 to 15 days depending on
+            the skin type and aftercare.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer('faq3')">Is mehndi safe for everyone?</h3>
+        <p class="faq-answer" id="faq3" style="display: none;">Yes, natural henna is safe for most people. However, it's
+            advisable to do a patch test if you have sensitive skin or allergies.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer('faq4')">How do I care for my mehndi?</h3>
+        <p class="faq-answer" id="faq4" style="display: none;">To prolong the life of your mehndi, avoid scrubbing the
+            area, keep it dry, and avoid water for the first few hours after application.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question" onclick="toggleAnswer('faq5')">Can you customize designs?</h3>
+        <p class="faq-answer" id="faq5" style="display: none;">Absolutely! I offer personalized designs to match your
+            style and preferences.</p>
+    </div>
+</section>
